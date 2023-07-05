@@ -1,0 +1,65 @@
+/* Banner styles */
+.banner {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+} 
+.banner .content {
+  position: absolute;
+  z-index: 1;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner .content h1 {
+  text-shadow: 3px 3px 8px black;
+  text-transform: uppercase;
+  color: #fff;
+  animation-name: MainFont;
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes MainFont {
+    from {
+      font-size: 6vw;
+      opacity: 0;
+    }
+    to {
+      font-size: 8.5vw;
+      opacity: 1;
+    }
+  }
+.banner .content p {
+  text-shadow: 3px 3px 8px black;
+  line-height: 1.2em;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  animation-name: SubFont;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes SubFont {
+    from {
+      font-size: 2.5vw;
+      opacity: 0;
+    }
+    to {
+      font-size: 4vw;
+      opacity: 1;
+    }
+  }
